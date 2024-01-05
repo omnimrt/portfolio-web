@@ -1,25 +1,67 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  line-height: 1.5;
+  color: #b09605;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: block;
+}
+
+.mob-menu {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 24px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  visibility: hidden;
+}
+
+.header-hero {
+  font-size: 48px;
+}
+
+.text-hero {
+  font-size: 19px;
 }
