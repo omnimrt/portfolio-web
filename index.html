@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-5f8678a8.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-1fc94b74.css">
   </head>
   <body>
     <div class="wrapper">
@@ -26,33 +26,41 @@
         <div class="container">
           <nav class="nav-wrapper">
             <a class="nav-logo" href="#">omnimrt.me</a>
-            <ol>
-              <li class="nav-link"><a href="#about-me">about</a></li>
-              <li class="nav-link"><a href="#projects">projects</a></li>
-              <li class="nav-link"><a href="#footer">contact</a></li>
+            <ol class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">projects</a>
+              </li>
             </ol>
-          </nav>
-          <button type="button" class="menu-open-btn">
-            <svg class="mob-btn-icon-open" width="24" height="24">
-              <use href="/vanilla-app-template/assets/symbol-defs-3227d621.svg#icon-Nav-1"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="nav-menu">
-          <div class="nav-mobile-menu">
-            <button type="button" class="menu-close-btn">
-              <svg class="mob-btn-icon-open" width="24" height="24">
-                <use href="/vanilla-app-template/assets/symbol-defs-3227d621.svg#icon-x-close"></use>
+            <button type="button" class="menu-open-btn">
+              <svg class="mob-btn-icon-open" width="36" height="36">
+                <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-Nav-1"></use>
               </svg>
             </button>
-            <ol class="nav-mobile-list">
-              <li class="nav-mobile-item">
-                <a href="#about-me">about me</a>
+          </nav>
+        </div>
+        <div class="mob-menu">
+          <div class="nav-mob-menu">
+            <button type="button" class="menu-close-btn">
+              <svg class="mob-btn-icon-close" width="36" height="36">
+                <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-x-close"></use>
+              </svg>
+            </button>
+            <ol class="mob-list">
+              <li class="mob-item">
+                <a class="mob-link" href="#about-me">about me</a>
               </li>
-              <li class="nav-mobile-item">
-                <a href="#projects">projects</a>
+              <li class="mob-item">
+                <a class="mob-link" href="#skills">skills</a>
               </li>
-              <li class="nav-mobile-item"><a href="#footer">social</a></li>
+              <li class="mob-item">
+                <a class="mob-link" href="#projects">projects</a>
+              </li>
             </ol>
           </div>
           <div class="social-links-mobile-menu">
@@ -60,28 +68,28 @@
               <li class="soc-icons-item">
                 <a href="" class="social-link">
                   <svg class="soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                    <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="soc-icons-item">
                 <a href="" class="social-link">
                   <svg class="soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                    <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="soc-icons-item">
                 <a href="" class="social-link">
                   <svg class="soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                    <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="soc-icons-item">
                 <a href="" class="social-link">
                   <svg class="soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    <use href="/vanilla-app-template/assets/symbol-defs-707cffc3.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
@@ -92,8 +100,14 @@
       <main>
         <section class="hero-section">
           <div class="container">
-            <h1 class="header-hero">Hi, I'm Martin Myhalyna</h1>
+            <h1 class="title-hero">Hi, my name is</h1>
+            <h2 class="subtitle-hero">Martin Myhalyna</h2>
             <p class="text-hero">Junior Fullstack Developer</p>
+            <p class="subtext-hero">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              esse officia iste.
+            </p>
+            <button class="hero-btn" type="submit">Download my CV!</button>
           </div>
         </section>
         <section id="about-me" class="about-me">
@@ -115,16 +129,22 @@
             </p>
           </div>
         </section>
-        <section id="projects" class="projects">
+        <section id="projects" class="projects-section">
           <div class="container">
-            <h2>projects</h2>
+            <h2>Projects</h2>
+            li
+          </div>
+        </section>
+        <section id="skills" class="skills-section">
+          <div class="container">
+            <h2>Skills</h2>
           </div>
         </section>
       </main>
     </div>
-    <footer id="footer">
+    <footer>
       <div class="container">
-        <h2>contacts</h2>
+        <h2>footer</h2>
       </div>
     </footer>
   </body>
