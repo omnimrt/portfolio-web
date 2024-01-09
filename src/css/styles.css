@@ -21,11 +21,6 @@ h6 {
   margin: 0;
 }
 
-h2 {
-  color: #f7f9f9;
-  margin: 10px 0 40px;
-}
-
 p {
   margin: 0;
 }
@@ -51,6 +46,11 @@ img {
   max-width: 100%;
   height: auto;
   width: 100%;
+}
+
+.section-title {
+  color: #f7f9f9;
+  margin: 10px 0 40px;
 }
 
 .container {
@@ -103,7 +103,9 @@ a:focus {
 }
 
 .header {
-  border: 1px solid #ffc914;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
+  border-image-slice: 1;
   border-radius: 4px;
 }
 
@@ -240,11 +242,19 @@ a:focus {
 }
 
 main {
-  border: 1px solid #e4572e;
+  /* border: 1px solid #e4572e;
+  border-radius: 4px; */
+  border: 1px solid;
+  border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
+  border-image-slice: 1;
   border-radius: 4px;
 }
 
 footer {
-  border: 1px solid #f7f9f9;
+  /* border: 1px solid #f7f9f9;
+  border-radius: 4px; */
+  border: 1px solid;
+  border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
+  border-image-slice: 1;
   border-radius: 4px;
 }
