@@ -51,6 +51,14 @@ img {
 .section-title {
   color: #f7f9f9;
   margin: 10px 0 40px;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
+}
+
+.section-counter {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #6c9a8b;
 }
 
 .container {
@@ -175,6 +183,7 @@ a:focus {
 
 .mob-link {
   color: #2e2f42;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -231,14 +240,19 @@ a:focus {
 
 .subtext-hero {
   color: #6c9a8b;
+  margin-top: 16px;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
 }
 
 .hero-btn {
+  width: 100%;
   background-color: transparent;
   border: 1px solid #e4572e;
   border-radius: 4px;
   color: #e4572e;
   padding: 20px 28px;
+  margin-top: 30px;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
 }
 
 main {
