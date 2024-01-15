@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols&family=Roboto:wght@300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Symbols&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
@@ -274,12 +274,47 @@
             </ul>
           </div>
         </section>
+        <section class="contact-form-section">
+          <div class="container">
+            <div class="contact-form-wrapper">
+              <h2 class="contact-form-title">Send me a message!</h2>
+              <h3 class="contact-form-subtitle">
+                Have a proposal or just want to say hello? Go ahead!
+              </h3>
+              <form class="contact-form" action="">
+                <label class="contact-form-label" for="username"
+                  >Your Name<input
+                    placeholder="Enter your name "
+                    type="text"
+                    id="username"
+                    class="user-input"
+                /></label>
+                <label class="contact-form-label" for="email"
+                  >Email Address<input
+                    placeholder="Enter your email address"
+                    type="email"
+                    id="email"
+                    class="user-input"
+                /></label>
+                <label class="contact-form-label" for="user-message"
+                  >Your Message
+                  <textarea
+                    class="user-message"
+                    name="user-message"
+                    id="user-message"
+                    rows="5"
+                    placeholder="Hello! I'm excited to discuss a potential project with you. Share your ideas, requirements, or questions, and let's explore the possibilities together!"
+                  ></textarea>
+                </label>
+                <button type="submit" class="contact-form-button">Shoot</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <footer>
-      <div class="container">
-        <h2>footer</h2>
-      </div>
+      <div class="container"></div>
     </footer>
     <script src="./main.js"></script>
   </body>

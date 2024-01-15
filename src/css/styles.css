@@ -369,8 +369,9 @@ footer {
 /* ====== Skills section ====== */
 
 .category-title {
-  color: #e4572e;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: #f7f9f9;
+  font-weight: 500;
   position: relative;
 }
 
@@ -381,11 +382,12 @@ footer {
 .category-title::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: 0;
   width: 100%;
-  height: 2px; /* Adjust the height of the line as needed */
-  background-color: #e4572e;
+  height: 5px; /* Adjust the height of the line as needed */
+  background-color: #6c9a8b;
+  z-index: -1;
 }
 
 .category-list-item {
@@ -417,5 +419,91 @@ footer {
   align-items: center;
   gap: 10px;
 }
-.container {
+
+/* ====== Contact form section ====== */
+.contact-form-section {
+  padding: 24px;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 15px;
+}
+
+.contact-form-label {
+  display: block;
+  color: #6c9a8b;
+}
+
+.user-input {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border-style: none none solid none;
+  border-width: 1px;
+  outline: none;
+  padding: 16px 0;
+}
+
+.user-input::placeholder,
+.user-message::placeholder {
+  font-weight: 100;
+  color: #f7f9f9;
+  letter-spacing: 1.2;
+}
+
+.user-message {
+  padding: 16px 0;
+  width: 100%;
+  background-color: transparent;
+  border-style: none none solid none;
+  border-width: 1px;
+  outline: none;
+  resize: none;
+}
+.user-message::placeholder {
+  vertical-align: bottom;
+  padding-bottom: 10px; /* Adjust as needed */
+}
+
+.user-message:focus::placeholder,
+.user-input:focus::placeholder {
+  color: transparent;
+}
+
+.contact-form-button {
+  border: 1px solid #e4572e;
+  background-color: transparent;
+  color: #e4572e;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
+  padding: 20px 28px;
+  margin-top: 15px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(228, 87, 46, 0.3);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-form-button:hover {
+  transform: translate(0, -10px);
+  box-shadow: 0 4px 16px rgba(228, 87, 46, 0.5);
+}
+
+.contact-form-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f7f9f9;
+}
+
+.contact-form-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 15px;
 }
