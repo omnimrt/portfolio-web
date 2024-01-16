@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuOpenBtn = document.querySelector('.menu-open-btn');
   const menuCloseBtn = document.querySelector('.menu-close-btn');
   const mobMenu = document.querySelector('.mob-menu');
+  const mobMenuLinks = document.querySelectorAll('.mob-link');
 
   menuOpenBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'visible';
@@ -26,5 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuCloseBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'hidden';
+  });
+
+  mobMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobMenu.style.visibility = 'hidden';
+    });
   });
 });

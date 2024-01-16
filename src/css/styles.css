@@ -10,6 +10,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #ffc914;
+  padding-top: 90px;
+  border: 1px solid;
+  border-top: none;
+  border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
+  border-image-slice: 1;
+  border-radius: 4px;
 }
 
 h1,
@@ -85,10 +91,6 @@ a:focus {
 }
 
 main {
-  border: 1px solid;
-  border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
-  border-image-slice: 1;
-  border-radius: 4px;
 }
 
 footer {
@@ -138,6 +140,12 @@ footer {
   border-image: linear-gradient(to right, #6c9a8b, #e4572e, #ffc914, #f7f9f9);
   border-image-slice: 1;
   border-radius: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #2e282a;
 }
 
 /* ====== Mobile menu ====== */
