@@ -616,5 +616,32 @@ footer {
   padding: 24px;
 }
 
-/* .footer-bottom-text {
-} */
+.footer-main {
+  display: block;
+  padding: 24px;
+}
+
+.mob-footer-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  color: #2e2f42;
+}
+
+.mob-footer-list {
+  display: block;
+}
+
+.mob-footer-list-item {
+  margin-top: 13px;
+}
+
+.mob-footer-list-item-link,
+.mob-footer-bottom-text {
+  color: #2e2f42;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+}
