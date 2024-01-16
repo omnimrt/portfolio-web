@@ -59,6 +59,24 @@ img {
   color: #f7f9f9;
   margin: 10px 0 40px;
   font-family: 'SF Mono', 'Roboto Mono', monospace;
+  position: relative;
+  padding-top: 70px;
+  margin-top: 0;
+}
+
+/* Style the anchor link */
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: -40px; /* Negative value to move it above the title */
+  display: block;
+  height: 40px; /* Adjust to control the size of the clickable area */
+  visibility: hidden; /* Hide by default */
+}
+
+/* Apply styles when the section is the target */
+.section:target .section-title::before {
+  visibility: visible;
 }
 
 .section-counter {
@@ -88,9 +106,6 @@ img {
 a:hover,
 a:focus {
   color: #6c9a8b;
-}
-
-main {
 }
 
 footer {
