@@ -30,19 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   mobMenuLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault(); // Prevent default link behavior
-      const targetId = link.getAttribute('href').substring(1); // Extract target section ID
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: 'smooth', // Use smooth scrolling
-          block: 'start', // Align the top of the section with the top of the viewport
-        });
-
-        mobMenu.style.visibility = 'hidden';
-      }
+    link.addEventListener('click', () => {
+      mobMenu.style.visibility = 'hidden';
     });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const scroll = new SmoothScroll('[data-scroll]', {
+    speed: 800, // Adjust the speed as needed
+    easing: 'easeInOutQuad', // Optional easing function
   });
 });
