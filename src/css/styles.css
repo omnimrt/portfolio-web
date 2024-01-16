@@ -126,6 +126,7 @@ footer {
 .menu-open-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .mob-btn-icon-open {
