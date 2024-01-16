@@ -35,10 +35,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-  const scroll = new SmoothScroll('[data-scroll]', {
-    speed: 100, // Adjust the speed as needed
-    easing: 'easeInOutQuad', // Optional easing function
-  });
-});
