@@ -130,6 +130,10 @@ footer {
 
 .nav-logo {
   color: #ffc914;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 13px;
+  font-style: normal;
 }
 
 .nav-logo:hover {
