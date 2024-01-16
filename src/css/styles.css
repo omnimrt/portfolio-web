@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
 }
 
 body {
@@ -64,7 +65,7 @@ img {
   margin: 10px 0 40px;
   font-family: 'SF Mono', 'Roboto Mono', monospace;
   position: relative;
-  padding-top: 70px;
+  /* padding-top: 70px; */
   margin-top: 0;
 }
 
@@ -152,6 +153,7 @@ footer {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .mob-btn-icon-open {
@@ -187,8 +189,11 @@ footer {
   justify-content: space-between;
   opacity: 1;
   visibility: hidden;
-  transition: visibility 0.2s ease;
+  transition: visibility 0.3s ease;
 }
+/* 
+.nav-mob-menu {
+} */
 
 .menu-close-btn {
   margin-left: auto;

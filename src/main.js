@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const offsetTop = targetSection.offsetTop;
         const scrollOptions = {
           top: offsetTop,
-          behavior: 'smooth', // Use smooth scrolling
+          behavior: 'smooth',
         };
 
         // Scroll to the target section
