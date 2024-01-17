@@ -20,18 +20,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuCloseBtn = document.querySelector('.menu-close-btn');
   const mobMenu = document.querySelector('.mob-menu');
   const mobMenuLinks = document.querySelectorAll('.mob-link');
+  const body = document.querySelector('body');
 
   menuOpenBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'visible';
+    body.classList.add('no-scroll');
   });
 
   menuCloseBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'hidden';
+    body.classList.remove('no-scroll');
   });
 
   mobMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobMenu.style.visibility = 'hidden';
+      body.classList.remove('no-scroll');
     });
   });
 });
