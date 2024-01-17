@@ -36,27 +36,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const scrollLinks = document.querySelectorAll('.scroll-link');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const scrollLinks = document.querySelectorAll('.scroll-link');
 
-  scrollLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+//   scrollLinks.forEach(link => {
+//     link.addEventListener('click', function (e) {
+//       e.preventDefault();
 
-      const targetId = this.getAttribute('data-target');
-      const targetSection = document.querySelector(targetId);
+//       const targetId = this.getAttribute('data-target');
+//       const targetSection = document.querySelector(targetId);
 
-      if (targetSection) {
-        // Calculate the distance to scroll
-        const offsetTop = targetSection.offsetTop;
-        const scrollOptions = {
-          top: offsetTop,
-          behavior: 'smooth',
-        };
+//       if (targetSection) {
+//         // Calculate the distance to scroll
+//         const offsetTop = targetSection.offsetTop;
+//         const scrollOptions = {
+//           top: offsetTop,
+//           behavior: 'smooth',
+//         };
 
-        // Scroll to the target section
-        window.scrollTo(scrollOptions);
-      }
-    });
-  });
-});
+//         // Scroll to the target section
+//         window.scrollTo(scrollOptions);
+//       }
+//     });
+//   });
+// });
