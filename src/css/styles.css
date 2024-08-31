@@ -469,6 +469,15 @@ footer {
   transform: translate(-15px, -10px);
   box-shadow: 0 4px 16px rgba(228, 87, 46, 0.5);
 }
+
+/* ====== About section ====== */
+
+.about-me-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.71; /* 171% */
+  letter-spacing: 0.02em;
+}
 /* ====== Projects section ====== */
 
 .projects-item-wrap {
