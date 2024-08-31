@@ -184,6 +184,12 @@ img {
   display: none;
 }
 
+.theme-toggle-container,
+.theme-toggle {
+  transition: opacity 0.1s ease-in-out;
+}
+
+
 @media (min-width: 320px) {
   .theme-toggle-container {
     top: 27px; /* Adjust the top spacing if needed */
@@ -322,6 +328,8 @@ footer {
 
 /* ====== Mobile menu ====== */
 
+
+
 .mob-menu {
   z-index: 2;
   top: 0;
@@ -425,6 +433,24 @@ footer {
 .social-link:focus {
   stroke: #6c9a8b;
 }
+
+.mob-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s; /* Delay hiding visibility until the opacity transition ends */
+}
+
+.mob-menu.visible {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* Ensure visibility is set immediately when opening */
+}
+
+.theme-toggle-container,
+.theme-toggle {
+  transition: opacity 0.3s ease-in-out;
+}
+
 
 /* ====== Hero section ====== */
 
