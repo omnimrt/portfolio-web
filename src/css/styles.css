@@ -474,6 +474,7 @@ footer {
 
 .about-me-text {
   font-size: 16px;
+  font-family: 'SF Mono', 'Roboto Mono', monospace;
   font-weight: 400;
   line-height: 1.71; /* 171% */
   letter-spacing: 0.02em;
