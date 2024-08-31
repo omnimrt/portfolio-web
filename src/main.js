@@ -29,24 +29,28 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobMenu = document.querySelector('.mob-menu');
   const mobMenuLinks = document.querySelectorAll('.mob-link');
   const body = document.querySelector('body');
-  const toggle = document.querySelector('.theme-toggle-container');
+  const toggleContainer = document.querySelector('.theme-toggle-container');
+  const toggle = document.querySelector('.theme-toggle');
 
   menuOpenBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'visible';
-    toggle.style.visibility = 'hidden'; // Hide the toggle button when menu is opened
+    toggleContainer.style.visibility = 'hidden'; // Hide the toggle button when menu is opened
+    toggle.style.visibility = 'hidden';
     body.classList.add('no-scroll');
   });
 
   menuCloseBtn.addEventListener('click', function () {
     mobMenu.style.visibility = 'hidden';
-    toggle.style.visibility = 'visible'; // Show the toggle button when menu is closed
+    toggleContainer.style.visibility = 'visible'; // Show the toggle button when menu is closed
+    toggle.style.visibility = 'visible';
     body.classList.remove('no-scroll');
   });
 
   mobMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobMenu.style.visibility = 'hidden';
-      toggle.style.visibility = 'visible'; // Show the toggle button when menu is closed via link
+      toggleContainer.style.visibility = 'visible'; // Show the toggle button when menu is closed via link
+      toggle.style.visibility = 'visible';
       body.classList.remove('no-scroll');
     });
   });
