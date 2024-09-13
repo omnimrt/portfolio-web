@@ -33,28 +33,78 @@ document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.theme-toggle');
 
   menuOpenBtn.addEventListener('click', function () {
-    mobMenu.style.visibility = 'visible';
-    toggleContainer.style.visibility = 'hidden'; // Hide the toggle button when menu is opened
-    toggle.style.visibility = 'hidden';
+    mobMenu.classList.add('visible');
+    toggleContainer.style.opacity = '0';
+    toggleContainer.style.pointerEvents = 'none';
+    toggle.style.opacity = '0';
+    toggle.style.pointerEvents = 'none';
     body.classList.add('no-scroll');
   });
 
   menuCloseBtn.addEventListener('click', function () {
-    mobMenu.style.visibility = 'hidden';
-    toggleContainer.style.visibility = 'visible'; // Show the toggle button when menu is closed
-    toggle.style.visibility = 'visible';
+    mobMenu.classList.remove('visible');
+    setTimeout(function () {
+      toggleContainer.style.opacity = '1';
+      toggleContainer.style.pointerEvents = 'auto';
+      toggle.style.opacity = '1';
+      toggle.style.pointerEvents = 'auto';
+    }, 300); // Adjust delay if needed
     body.classList.remove('no-scroll');
   });
 
   mobMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
-      mobMenu.style.visibility = 'hidden';
-      toggleContainer.style.visibility = 'visible'; // Show the toggle button when menu is closed via link
-      toggle.style.visibility = 'visible';
+      mobMenu.classList.remove('visible');
+      setTimeout(function () {
+        toggleContainer.style.opacity = '1';
+        toggleContainer.style.pointerEvents = 'auto';
+        toggle.style.opacity = '1';
+        toggle.style.pointerEvents = 'auto';
+      }, 300); // Adjust delay if needed
       body.classList.remove('no-scroll');
     });
   });
 });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const menuOpenBtn = document.querySelector('.menu-open-btn');
+//   const menuCloseBtn = document.querySelector('.menu-close-btn');
+//   const mobMenu = document.querySelector('.mob-menu');
+//   const mobMenuLinks = document.querySelectorAll('.mob-link');
+//   const body = document.querySelector('body');
+//   const toggleContainer = document.querySelector('.theme-toggle-container');
+//   const toggle = document.querySelector('.theme-toggle');
+
+//   menuOpenBtn.addEventListener('click', function () {
+//     mobMenu.style.visibility = 'visible';
+//     toggleContainer.style.opacity = '0';
+//     toggleContainer.style.pointerEvents = 'none';
+//     toggle.style.opacity = '0';
+//     toggle.style.pointerEvents = 'none';
+//     body.classList.add('no-scroll');
+//   });
+
+//   menuCloseBtn.addEventListener('click', function () {
+//     mobMenu.style.visibility = 'hidden';
+//     toggleContainer.style.opacity = '1';
+//     toggleContainer.style.pointerEvents = 'auto';
+//     toggle.style.opacity = '1';
+//     toggle.style.pointerEvents = 'auto';
+//     body.classList.remove('no-scroll');
+//   });
+
+//   mobMenuLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//       mobMenu.style.visibility = 'hidden';
+//       toggleContainer.style.opacity = '1';
+//       toggleContainer.style.pointerEvents = 'auto';
+//       toggle.style.opacity = '1';
+//       toggle.style.pointerEvents = 'auto';
+//       body.classList.remove('no-scroll');
+//     });
+//   });
+// });
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   const menuOpenBtn = document.querySelector('.menu-open-btn');
