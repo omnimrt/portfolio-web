@@ -1,3 +1,5 @@
+import emailjs from 'emailjs-com';
+
 // Initialize EmailJS with your public key
 emailjs.init('your-public-key');
 
