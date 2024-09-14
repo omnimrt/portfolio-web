@@ -1,7 +1,5 @@
-import emailjs from 'emailjs-com';
-
 // Initialize EmailJS with your public key
-emailjs.init('your-public-key');
+emailjs.init('JD29XyBNvNMqSn1vQ'); // Replace with your actual public key
 
 document
   .getElementById('contactForm')
