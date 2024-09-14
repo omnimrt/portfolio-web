@@ -5,15 +5,17 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   const formData = new FormData(form);
 
   try {
-    const response = await fetch('https://formspree.io/f/mgegvpqe', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'application/json',
-      },
-    });
+    const response = await axios.post(
+      'https://formspree.io/f/mgegvpqe',
+      formData,
+      {
+        headers: {
+          Accept: 'application/json',
+        },
+      }
+    );
 
-    if (response.ok) {
+    if (response.status === 200) {
       // Show success message and reset the form
       document.getElementById('formMessage').style.display = 'block'; // Example: success message
       form.reset();
@@ -21,6 +23,7 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
       alert('Failed to send message. Please try again.');
     }
   } catch (error) {
+    console.error('Error:', error);
     alert('Oops! There was a problem.');
   }
 });
