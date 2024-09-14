@@ -13,6 +13,9 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
       },
     });
 
+    console.log('Form action URL:', 'https://formspree.io/f/mgegvpqe');
+    console.log('Method:', 'POST');
+
     if (response.ok) {
       document.getElementById('formMessage').style.display = 'block';
       form.reset();
