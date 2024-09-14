@@ -1,11 +1,10 @@
-// Initialize EmailJS with your public key once
-emailjs.init('JD29XyBNvNMqSn1vQ');
+// Initialize EmailJS with your public key
+emailjs.init('your-public-key');
 
-// Handle form submission
 document
   .getElementById('contactForm')
   .addEventListener('submit', async function (e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); // Prevents the form from redirecting
 
     const form = document.getElementById('contactForm');
     const formData = {
@@ -17,8 +16,8 @@ document
     try {
       // Send email using EmailJS
       const response = await emailjs.send(
-        'service_8ntxuwg', // Replace with your service ID
-        'template_0rz6r1r', // Replace with your template ID
+        'service_8ntxuwg', // Replace with your actual service ID
+        'template_0rz6r1r', // Replace with your actual template ID
         formData
       );
 
